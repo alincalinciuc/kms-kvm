@@ -10,10 +10,10 @@ echo export NUBOMEDIATURNSERVERPORT=3478 >> /opt/envvars
 echo export NUBOMEDIAMONITORINGIP=80.96.122.69 >> /opt/envvars
 
 cd /root/deploy && git pull origin master
-mv WebRtcEndpoint.conf.ini /etc/kurento/modules/kurento/WebRtcEndpoint.conf.ini
-mv fix.sh /usr/local/bin/
-mv logstash-forwarder.conf /etc/logstash-forwarder.conf
-mv collectd.conf /etc/collectd/collectd.conf
+mv /root/deploy/WebRtcEndpoint.conf.ini /etc/kurento/modules/kurento/WebRtcEndpoint.conf.ini
+mv /root/deploy/fix.sh /usr/local/bin/
+mv /root/deploy/logstash-forwarder.conf /etc/logstash-forwarder.conf
+mv /root/deploy/collectd.conf /etc/collectd/collectd.conf
 
 # Update the configurations
 bash /usr/local/bin/fix.sh
