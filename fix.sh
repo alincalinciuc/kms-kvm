@@ -45,7 +45,6 @@ export DISPLAY=:0
 service kurento-media-server-6.0 restart
 service logstash-forwarder restart
 service collectd restart
-service logstash-forwarder restart
 
 # Start monitoring tools
 service monit restart
